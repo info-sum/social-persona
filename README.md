@@ -78,8 +78,6 @@ Instagram 프로필 @nasa    브라우저 순회: 10건 / 60초  →  TLS 지문
 Threads 프로필 @zuck      브라우저 스크롤: 40건 / 17초 →  TLS 지문: 19건 / 11초
 ```
 
-이 접근은 [insane-search](https://github.com/fivetaku/insane-search)의 Phase 0→3 에스컬레이션에서 가져왔습니다. 그 프로젝트는 Threads **영상 포스트**의 서명 CDN URL 추출에 curl_cffi 지문을 쓰는데, 같은 원리가 **텍스트 캡션**에도 통한다는 것을 확인해 Node 쪽 구현(`impit`)으로 옮겼습니다. Instagram은 원래 대상에 없던 플랫폼입니다.
-
 **경계는 그대로입니다.** 이건 공개 페이지를 읽는 수단이지 인증 우회가 아닙니다. 비공개 계정과 로그인 벽은 지문을 바꿔도 열리지 않고, 그 경우 실패를 그대로 보고합니다.
 
 ---
@@ -280,10 +278,6 @@ RUN_NETWORK_TESTS=1 npx vitest run tests/network.test.ts
 문체 재현 도구입니다. 본인 문체를 재사용하거나 명시적 동의를 받은 경우에만 쓰세요. 생성되는 `SKILL.md`에는 사칭 금지·PII 금지·없는 사실 생성 금지 조항이 항상 포함됩니다.
 
 수집은 공개 페이지만 대상으로 합니다. 인증을 우회하지 않고, 자격증명을 저장·전송하지 않습니다. 대상 사이트의 이용약관·`robots.txt`·레이트리밋과 관련 법령을 지키는 책임은 사용자에게 있습니다.
-
-## 참고
-
-TLS 지문 에스컬레이션 접근은 [insane-search](https://github.com/fivetaku/insane-search) (MIT)에서 가져왔습니다.
 
 ## 라이선스
 

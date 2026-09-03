@@ -161,3 +161,8 @@
 - **브랜치**: `main`
 - **특이사항**: `.gitignore`에 의해 `out/`(생성된 스킬 산출물) 및 `node_modules`, `dist`는 완벽히 제외됨.
 - **초기 커밋 및 푸시 완료**.
+
+---
+
+## 10. README.md 수정 기록
+- **작업 내용**: README.md 내 `insane-search` 관련 참조 문장 및 참고(Reference) 섹션 전체 삭제 완료.
