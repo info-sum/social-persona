@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Atom 테스트</title>
+  <link rel="alternate" href="https://atom.example.com/"/>
+  <author><name>아톰작성자</name></author>
+  <entry>
+    <id>tag:atom.example.com,2025:1</id>
+    <title>아톰 첫 글</title>
+    <link rel="alternate" href="https://atom.example.com/1"/>
+    <published>2025-03-01T12:00:00Z</published>
+    <category term="에세이"/>
+    <content type="html">&lt;p&gt;기술 부채라는 말을 싫어한다.&lt;/p&gt;&lt;p&gt;부채는 갚을 계획이 있을 때 쓰는 말이다.&lt;/p&gt;</content>
+  </entry>
+</feed>

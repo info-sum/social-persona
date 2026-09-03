@@ -1,0 +1,41 @@
+{
+  "name": "social-persona",
+  "version": "0.1.0",
+  "description": "SNS 링크(X, Instagram, Threads, 블로그)를 넣으면 게시글을 수집·분석해 페르소나 에이전트 스킬(SKILL.md)을 생성하는 CLI",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "social-persona": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "verify": "npm run typecheck && npm run test"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0",
+    "fast-xml-parser": "4.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "vitest": "2.1.8"
+  },
+  "optionalDependencies": {
+    "impit": "0.14.4",
+    "playwright": "1.49.1"
+  }
+}

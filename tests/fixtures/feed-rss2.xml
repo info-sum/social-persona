@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>테스트 블로그</title>
+    <link>https://example.com</link>
+    <description>테스트용 피드</description>
+    <managingEditor>writer@example.com (글쓴이)</managingEditor>
+    <item>
+      <title>첫 번째 글</title>
+      <link>https://example.com/posts/1</link>
+      <guid>https://example.com/posts/1</guid>
+      <pubDate>Mon, 05 May 2025 09:30:00 +0900</pubDate>
+      <dc:creator>글쓴이</dc:creator>
+      <category>회고</category>
+      <category>개발</category>
+      <content:encoded><![CDATA[<p>배포를 세 번 굴렀다.</p><p>문제는 <b>캐시</b>였다. 늘 캐시다.</p><ul><li>첫째</li><li>둘째</li></ul>]]></content:encoded>
+    </item>
+    <item>
+      <title>두 번째 글</title>
+      <link>https://example.com/posts/2</link>
+      <pubDate>Tue, 06 May 2025 23:10:00 +0900</pubDate>
+      <description>좋은 코드는 지울 수 있는 코드다. 의존이 적으면 지우기 쉽다.</description>
+    </item>
+  </channel>
+</rss>
